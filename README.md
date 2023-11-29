@@ -1,14 +1,22 @@
-## JavaScript Fundamentals Quiz
+# JavaScript Fundamentals Quiz
 
-## Description
+# Description
 
-## Installation
+This page is to take a timed quiz on JavaScript fundamentals that stores high scores, so that you can gauge your progress compared to other peers
 
-## Usage
+# Installation
 
-## Link to deployed application
+You don't need to install anything. You can open this in any browser on your computer.
 
-## License
+# Usage
+
+This is to test your JavaScript knowledge.
+
+# Link to deployed application
+
+JavaScript Fundamentals Quiz: https://sivanishanthar.github.io/JavaScript-Fundamentals-Quiz/
+
+# License
 
 MIT License
 

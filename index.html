@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-  <link rel="stylesheet" href="./assets/style.css">
-  <title>JavaScript Coding Chellange</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;400&display=swap" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>JavaScript Coding Chellange</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
 
-
-  <div class="main">
-    <div class="container scores-time">
-      <div class="row">
-        <div class="column left">
-          <div class="scores">
-            <p id="highScore">View High Scores :<span id="currentScore">0</span></p>
-          </div>
-        </div>
-        <div class="column right">
-          <div class="time">
-            <p id="timer">Time Left: <span id="timeLeft">0</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About Me section -->
-    <div id="quiz-container" class="container quiz-container ">
-      <div class="">
-        <div class="column">
-          <div class="quiz-dicription text-center">
-            <h1>JavaScript Coding Chellange</h1>
-            <p>Try to answer the following code-related question within the time limit.</p>
-            <p>Keep in mind that incorrect answer will be penalize your score/time by ten seconds!</p>
-            <div class="">
-              <button class="btn start-quiz">Start the JavaScript Quiz ❯</button>
+    <div class="main">
+        <div class="container scores-time">
+            <div class="row">
+                <div class="column left">
+                    <div class="scores">
+                        <p><a href="#" class="high-scores" id="highScore">View High Scores</a></p>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="time">
+                        <p id="timer">Time: <span id="timeLeft">0</span></p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div id="question-container" class="question-container" style="display: none;">
-            <h2 id="question">Question 1: Which of the following is correct about JavaScript?",</h2>
-            <p id="answers" class="optionA">A. Object-Based language</p>
-            <p id="answers" class="optionB">B. Assembly-language</p>
-            <p id="answers" class="optionC">C. Object-Oriented language</p>
-            <p id="answers" class="optionD">D. High-level language</p>
-          </div>
         </div>
-      </div>
+        <div id="quiz-container" class="container quiz-container">
+            <div class="quiz-dicription text-center">
+                <h1>JavaScript Coding Chellange</h1>
+                <p>Try to answer the following code-related question within the time limit.</p>
+                <p>Keep in mind that incorrect answer will be penalize your score/time by ten seconds!</p>
+                <button id="start-quiz" class="btn btn-primary btn-lg" type="button">Start the JavaScript Quiz ❯</button>
+            </div>
+            <div class="quiz-question">
+                <div class="row">
+                    <div class="column col-8 mx-auto">
+                        <div id="quiz-card" class="quiz-card" style="display: none;">
+                            <!-- Append question here-->
+                            <h2 id="question"></h2>
+                            <div class="options">
+                                <!-- Append the answer options-->
+                                <p id="optionA"><button class="btn btn-info btn-option"></button></p>
+                                <p id="optionB"><button class="btn btn-info btn-option"></button></p>
+                                <p id="optionC"><button class="btn btn-info btn-option"></button></p>
+                                <p id="optionD"><button class="btn btn-info btn-option"></button></p>
+                            </div>
+                            <hr>
+                            <em><p class="answer-check"></p></em>
+                        </div>
+                        <div class="score-card" style="display: none;">
+                            <h2>All done!</h2>
+                            <h3>Your final score is <span id="finalScore"></span></h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="initials">Enter your initials:</label>
+                                    <input id="initials" class="form-control" type="text" placeholder="Enter your initials">
+                                </div>
+                                <button id="initialSubmit" class="btn btn-primary btn-lg" type="submit">Submit ❯</button>
+                            </form>
+                        </div>
+                        <div class="score-list-section" style="display: none;">
+                            <h2>High Scores</h2>
+                            <div class="score-list"></div>
+                            <div>
+                                <button id="goBack" class="btn btn-primary btn-lg">Go Back</button>
+                                <button id="clearHighscores" class="btn btn-primary btn-lg">Clear High Scores</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>&copy; 2023 Siva's work | Challenge - 04.</p>
+    </footer>
 
-  <!-- Footer section -->
-  <footer class="footer">
-    <p>&copy; 2023 Siva's work | Challenge - 04.</p>
-  </footer>
-
-  <script src="./assets/script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
