@@ -16,6 +16,7 @@ This is to test your JavaScript knowledge.
 ![Qestion Start](images/questionStart.png)
 ![Correct Answer](images/correctAnswer.png)
 ![All Done](images/alldone.png)
+![High Score](images/alldone.png)
 
 
 
