@@ -12,6 +12,14 @@ You don't need to install anything. You can open this in any browser on your com
 
 This is to test your JavaScript knowledge.
 
+![Start Page](images/startScreen.png)
+![Qestion Start](images/questionStart.png)
+![Correct Answer](images/correctAnswer.png)
+![All Done](images/alldone.png)
+
+
+
+
 # Link to deployed application
 
 JavaScript Fundamentals Quiz: https://sivanishanthar.github.io/JavaScript-Fundamentals-Quiz/
