@@ -22,7 +22,7 @@ const scoreList = document.querySelector('.score-list');
 const goBackButton = document.getElementById('goBack');
 const clearHighScoresButton = document.getElementById('clearHighscores');
 
-
+// Questions for the challenge 
 const questionList = [
 {
     questionText: "Which of the following is correct about JavaScript?",
@@ -167,6 +167,7 @@ function endQuiz() {
     finalScoreElement.textContent = score;
 }
 
+// Show High score
 function viewHighScore(event) {
     event.preventDefault();
     quizDescription.style.display = 'none';
